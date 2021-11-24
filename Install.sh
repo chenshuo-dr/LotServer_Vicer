@@ -98,9 +98,9 @@ function Install()
   rm -rf /tmp/*lotServer* >/dev/null 2>&1
   Welcome;
   if [ -f /appex/bin/serverSpeeder.sh ]; then
-    bash /appex/bin/serverSpeeder.sh status
+    bash /appex/bin/serverSpeeder.sh status >/dev/null 2>&1
   elif [ -f /appex/bin/lotServer.sh ]; then
-    bash /appex/bin/lotServer.sh status
+    bash /appex/bin/lotServer.sh status >/dev/null 2>&1
   fi
   exit 0
 }
